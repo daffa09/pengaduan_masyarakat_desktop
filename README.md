@@ -1,16 +1,16 @@
 # pengaduan_masyarakat_desktop
 Aplikasi Pengaudan Masyarakat Sederhana Berbasis Desktop menggunakan Vb Net
 
-##Login
+### LOGIN
 
-Masyarakat:
-username = fanthom
-password = fanthom
+Masyarakat: \
+username = fanthom \
+password = fanthom 
 
-Admin:
-username = admin
-password = admin
+Admin: \
+username = admin \
+password = admin 
 
-Petugas:
-username = petugas
+Petugas: \
+username = petugas \
 password = petugas
