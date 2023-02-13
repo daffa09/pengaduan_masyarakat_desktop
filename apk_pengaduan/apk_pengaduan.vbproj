@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E00039AC-2F3E-461F-88C1-6A46B1DB47E9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>apk_pengaduan.My.MyApplication</StartupObject>
+    <RootNamespace>apk_pengaduan</RootNamespace>
+    <AssemblyName>apk_pengaduan</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>apk_pengaduan.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>apk_pengaduan.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLaporanAdmin.Designer.vb">
+      <DependentUpon>FormLaporanAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormLaporanAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPengaduanMasyarakat.Designer.vb">
+      <DependentUpon>FormPengaduanMasyarakat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormPengaduanMasyarakat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistrasiAdmin.Designer.vb">
+      <DependentUpon>FormRegistrasiAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistrasiAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistrasiMasyarakat.Designer.vb">
+      <DependentUpon>FormRegistrasiMasyarakat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistrasiMasyarakat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTanggapanAdmin.Designer.vb">
+      <DependentUpon>FormTanggapanAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormTanggapanAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTanggapanPengaduanMasyarakat.Designer.vb">
+      <DependentUpon>FormTanggapanPengaduanMasyarakat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormTanggapanPengaduanMasyarakat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTanggapanPetugas.Designer.vb">
+      <DependentUpon>FormTanggapanPetugas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormTanggapanPetugas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenuAdmin.Designer.vb">
+      <DependentUpon>MainMenuAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenuAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenuMasyarakat.Designer.vb">
+      <DependentUpon>MainMenuMasyarakat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenuMasyarakat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenuPetugas.Designer.vb">
+      <DependentUpon>MainMenuPetugas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenuPetugas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mdlKoneksi.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLaporanAdmin.resx">
+      <DependentUpon>FormLaporanAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPengaduanMasyarakat.resx">
+      <DependentUpon>FormPengaduanMasyarakat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistrasiAdmin.resx">
+      <DependentUpon>FormRegistrasiAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistrasiMasyarakat.resx">
+      <DependentUpon>FormRegistrasiMasyarakat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTanggapanAdmin.resx">
+      <DependentUpon>FormTanggapanAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTanggapanPengaduanMasyarakat.resx">
+      <DependentUpon>FormTanggapanPengaduanMasyarakat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTanggapanPetugas.resx">
+      <DependentUpon>FormTanggapanPetugas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenuAdmin.resx">
+      <DependentUpon>MainMenuAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenuMasyarakat.resx">
+      <DependentUpon>MainMenuMasyarakat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenuPetugas.resx">
+      <DependentUpon>MainMenuPetugas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-computer-icons-scalable-vector-graphics-symbol-cli-plus-sign-5aaad88d6ee9a1.3132124515211459974543.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-computer-icons-scalable-vector-graphics-symbol-cli-plus-sign-5aaad88d6ee9a1.31321245152114599745431.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
