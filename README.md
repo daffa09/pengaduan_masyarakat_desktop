@@ -2,10 +2,12 @@
 <!-- slug: pengaduan-masyarakat-desktop -->
 <!-- title: Pengaduan Masyarakat Desktop -->
 <!-- description: Public complaint management system desktop application built with VB.NET for handling citizen reports -->
-<!-- image: https://github.com/user-attachments/assets/placeholder-pengaduan -->
+<!-- image: https://github.com/user-attachments/assets/a4ca777b-2419-4135-888f-129fd051a701 -->
 <!-- tags: vb.net, .net, mysql, desktop-app, complaint-system -->
 
 # Public Complaint Management System (Pengaduan Masyarakat)
+
+<img width="1536" height="1024" alt="pengaduan-masyarakat-desktop" src="https://github.com/user-attachments/assets/a4ca777b-2419-4135-888f-129fd051a701" />
 
 A desktop-based public complaint management system built with VB.NET. This application provides a comprehensive solution for managing citizen complaints, enabling efficient tracking and resolution of public issues through different user roles.
 
